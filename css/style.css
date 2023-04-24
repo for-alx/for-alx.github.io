@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url("../images/desktop-wallpaper-web-development.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header {
+    background-image: url("../images/header.png");
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* HEADER PART(DIV) */
+nav {
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 80px;
+}
+nav label i {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+    padding-left: 80px;
+    color: white;
+}
+nav ul {
+    float: right;
+    padding-right: 80px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+
+}
+nav ul li a:hover, a.active {
+    background: rgb(0, 153, 255);
+    border-radius: 5px;
+}
+nav ul .navbar-icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+
+.header .intro {
+    height: 80vh;
+    color: white;
+    padding: 80px;
+}
+.intro .hello {
+    font-size: 60px;
+    margin-top:40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all 0.5s;
+}
+.intro p {
+    width: 50%;
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px black;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+}
+.intro button {
+    padding: 10px;
+    margin-top: 25px;
+    background: #3366ff;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+}
+.intro button:hover {
+    border: 2px solid white;
+}
+.intro h1  {
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* SERVICES PART(DIV) */
+.services {
+    padding: 30px 80px 30px 80px;
+    width: 100%;
+    color: #3d3d5c;
+    background: white;
+    margin-top: 50px;
+}
+.services .title {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.services .card-box {
+    display: flex;
+/*    border: solid 3px red;*/
+}
+.services .card-box .cards {
+    margin: auto;
+/*    border: solid 3px red;*/
+}
+.services .card {
+    margin: 26px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.services .card img {
+    object-fit: cover;
+    width: auto;
+    height: 250px;
+    border-bottom: solid 5px rgb(10, 10, 15, 0.3);
+    border-radius: 8px;
+}
+.services .card h1 {
+    margin-top: 5px;
+    font-size: 25px;
+}
+.services .card .price {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.services .card button {
+    padding: 10px 20px 10px 20px;
+    margin: 15px 0 15px 0;
+    background: #3366ff;
+    border: none;
+    border-radius: 18px;
+    color: white;
+    cursor: pointer;
+}
+.services .card button:hover, .services .card:hover {
+    border: solid 2px #d1b3ff;
+}
+
+
+/* // */
+
+
+
+
+
+/* FOOTER PART(DIV) */
+.footer {
+    width: 100%;
+    background: gray;
+    color: #3d3d5c;
+    height: 100px;
+    display: flex;
+}
+.footer .dev-info {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+@media (max-width: 1080px) {
+    body {
+/*        background: red;*/
+    }
+    /*  Header  */
+    .intro .hello {
+        margin-top: 4px;
+    }
+    /*  Services  */
+    .services .card {
+        margin: 8px;
+        width: 200px;
+    }
+    .services .card img{
+        height: 200px;
+    }
+    .services .card h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+/*        background: red;*/
+    }
+    /*  Header  */
+    .intro .hello {
+        margin-top: -30px;
+    }
+    nav ul .navbar-icon {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 20px;
+    }
+    nav ul {
+        background: rgb(133, 51, 255, 0.3);
+        width: 100%;
+    }
+    nav ul .option {
+        display: none;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        line-height: 50px;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 0;
+    }
+
+    /*  Services  */
+    .services .cards {
+
+    }
+    .services .card {
+        display: block;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+    .services .card img{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 477px) {
+    
+}
+
+
